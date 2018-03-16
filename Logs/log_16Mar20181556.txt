@@ -1,0 +1,2 @@
+3/16/2018 3:56:03 PM - Exception occurred while reading smell tag preferences. Could not find a part of the path 'D:\Autofac-Interceptor\AutofacModule\.config\SmellTagging.config'.
+

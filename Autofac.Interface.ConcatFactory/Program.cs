@@ -9,7 +9,6 @@
 
     class Program
     {
-
         static async Task<IEnumerable<TestIEnumerable>> GetData()
         {
             var testIEnumerables = new List<TestIEnumerable>
