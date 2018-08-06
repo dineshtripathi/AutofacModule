@@ -4,7 +4,12 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using System.Web.Configuration;
+    using Castle.Core.Internal;
     using Demo.Extensions;
+    using Demo.Fluent;
+    using Demo.Fluent.FluentInterface;
+    using Demo.Fluent.Model;
     using Demo.Model;
 
     class Program
@@ -17,8 +22,8 @@
                 new TestIEnumerable { Properties = "prop1", Name = "Dinesh2" },
                 new TestIEnumerable { Properties = "prop1", Name = "Dinesh21" },
                 new TestIEnumerable { Properties = "prop1", Name = "Dinesh22" },
-                new TestIEnumerable { Properties = "prop1", Name = "Dinesh23" },
-                new TestIEnumerable { Properties = "prop1", Name = "Dinesh24" },
+                new TestIEnumerable { Properties = "prop1", Name = "" },
+                new TestIEnumerable { Properties = "prop1", Name = "" },
                 new TestIEnumerable { Properties = "prop2", Name = "Dinesh25" },
                 new TestIEnumerable { Properties = "prop2", Name = "Dinesh26" }
             };
@@ -26,6 +31,26 @@
         }
         static async Task Main()
         {
+
+            var fluent = new FluentOnetAttributes<AttributeModel>()
+                .Create<AttributeModel>()
+                .BuildAttributes()
+                .AverageOutScores()
+                .MoveBottomLevelAttributes()
+                .RemoveDuplicates()
+                .RemoveSupressions()
+                .AddTitle()
+                .BoostMathsSkills()
+                .CombineAttributes()
+                .ProcessResults()
+                .GetResults();
+             
+
+            var configuration = WebConfigurationManager.OpenWebConfiguration("../web.config");
+
+            var withempty =await GetData();
+            var withoutempty =  GetData().Result.Where(x => !string.IsNullOrEmpty(x.Name));
+
             ModelAbstract imple = new ModelConsumer();
             imple.GenerateModel();
             var scope = AutoFacContainerConfig.RegisterLifetimeScope();

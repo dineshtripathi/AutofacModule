@@ -17,6 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Demo.Model", "Autof
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Demo.Interceptor", "Autofac.Demo.Interceptor\Autofac.Demo.Interceptor.csproj", "{B7FDF33E-7980-4B6A-A341-C5D6D69B1493}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Demo.Common", "Autofac.Demo.Common\Autofac.Demo.Common.csproj", "{B238857C-5785-4E90-B292-84790374F214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Demo.ConcatWebApp", "Autofac.Demo.ConcatWebApp\Autofac.Demo.ConcatWebApp.csproj", "{D5716D7D-168C-414E-BB19-878139077D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Demo.ConcatWebApp.Tests", "Autofac.Demo.ConcatWebApp.Tests\Autofac.Demo.ConcatWebApp.Tests.csproj", "{0CCD9F82-BF3C-4B63-81D3-4A662B2AB9F7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{70AE643B-65A8-469C-8417-62472E7DD0DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Demo.Fluent", "..\Autofac.Demo.Fluent\Autofac.Demo.Fluent.csproj", "{24974B6C-0894-4307-A7E8-34C14AA1E7F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +61,26 @@ Global
 		{B7FDF33E-7980-4B6A-A341-C5D6D69B1493}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7FDF33E-7980-4B6A-A341-C5D6D69B1493}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7FDF33E-7980-4B6A-A341-C5D6D69B1493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B238857C-5785-4E90-B292-84790374F214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B238857C-5785-4E90-B292-84790374F214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B238857C-5785-4E90-B292-84790374F214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B238857C-5785-4E90-B292-84790374F214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5716D7D-168C-414E-BB19-878139077D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5716D7D-168C-414E-BB19-878139077D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5716D7D-168C-414E-BB19-878139077D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5716D7D-168C-414E-BB19-878139077D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CCD9F82-BF3C-4B63-81D3-4A662B2AB9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CCD9F82-BF3C-4B63-81D3-4A662B2AB9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CCD9F82-BF3C-4B63-81D3-4A662B2AB9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CCD9F82-BF3C-4B63-81D3-4A662B2AB9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70AE643B-65A8-469C-8417-62472E7DD0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70AE643B-65A8-469C-8417-62472E7DD0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70AE643B-65A8-469C-8417-62472E7DD0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70AE643B-65A8-469C-8417-62472E7DD0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24974B6C-0894-4307-A7E8-34C14AA1E7F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24974B6C-0894-4307-A7E8-34C14AA1E7F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24974B6C-0894-4307-A7E8-34C14AA1E7F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24974B6C-0894-4307-A7E8-34C14AA1E7F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

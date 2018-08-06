@@ -121,6 +121,7 @@
       <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -136,6 +137,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Autofac.Demo.Fluent\Autofac.Demo.Fluent.csproj">
+      <Project>{24974B6C-0894-4307-A7E8-34C14AA1E7F4}</Project>
+      <Name>Autofac.Demo.Fluent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Autofac.Demo.Common\Autofac.Demo.Common.csproj">
+      <Project>{B238857C-5785-4E90-B292-84790374F214}</Project>
+      <Name>Autofac.Demo.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Autofac.Demo.Extensions\Autofac.Demo.Extensions.csproj">
       <Project>{c4b6d3a3-4480-4aac-81ae-c9db7e18d8ce}</Project>
       <Name>Autofac.Demo.Extensions</Name>
@@ -144,6 +153,10 @@
       <Project>{B7FDF33E-7980-4B6A-A341-C5D6D69B1493}</Project>
       <Name>Autofac.Demo.Interceptor</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Autofac.Demo.Interface.Impl.Car\Autofac.Demo.Interface.Impl.Car.csproj">
+      <Project>{248BEC49-10F1-421D-9A72-2E5835E8679A}</Project>
+      <Name>Autofac.Demo.Interface.Impl.Car</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Autofac.Demo.Interface\Autofac.Demo.Interface.csproj">
       <Project>{4C7584D9-E6AB-4BED-8F40-199C6BE857CD}</Project>
       <Name>Autofac.Demo.Interface</Name>
@@ -151,6 +164,10 @@
     <ProjectReference Include="..\Autofac.Demo.Model\Autofac.Demo.Model.csproj">
       <Project>{8D513C8F-93A0-4882-99F1-751D171F28DD}</Project>
       <Name>Autofac.Demo.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusConcat\Autofac.Demo.Interface.Impl.Bus.csproj">
+      <Project>{01CE167F-762F-4CE7-BC0D-682325AAEBDB}</Project>
+      <Name>Autofac.Demo.Interface.Impl.Bus</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  autofac.demo.concatwebapp:
+    ports:
+      - "80"
+networks:
+  default:
+    external:
+      name: nat

@@ -1,9 +1,13 @@
 ﻿namespace Autofac.Interface.ConcatFactory
 {
     using System;
+    using Autofac.Demo.Common;
     using Autofac.Demo.Interceptor;
+    using BusConcat;
     using Castle.DynamicProxy;
     using Configuration;
+    using Demo.Interface;
+    using Demo.Interface.Impl.Car;
     using Demo.Model;
     using Extras.DynamicProxy;
     using Microsoft.Extensions.Configuration;
@@ -43,6 +47,8 @@
 
             builder.RegisterType<ConcatFactory>().AsImplementedInterfaces().SingleInstance().EnableInterfaceInterceptors().InterceptedBy(LogInterceptor.name, LogInterceptor.name); 
             builder.RegisterAssemblyTypes(typeof(ModelAbstract).Assembly).Where(t => t.IsSubclassOf(typeof(ModelAbstract))).As<ModelAbstract>();
+            builder.RegisterType<BusConcat>().Keyed<IAutoFacDemo>(ViewerType.Bus);
+            builder.RegisterType<CarConcat>().Keyed<IAutoFacDemo>(ViewerType.Car);
             AutofacModuleLoader.Loader(builder);
             builder.RegisterType<ModelFeeder>();
         }
