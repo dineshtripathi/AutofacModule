@@ -6,6 +6,7 @@
     using BusConcat;
     using Castle.DynamicProxy;
     using Configuration;
+    using Demo.Fluent.AutofacConfig;
     using Demo.Interface;
     using Demo.Interface.Impl.Car;
     using Demo.Model;
@@ -23,7 +24,9 @@
             var config = new ConfigurationBuilder();
             config.AddJsonFile("AutofacConfiguration.json");
             var module = new ConfigurationModule(config.Build());
+            
             builder.RegisterModule(module);
+            builder.RegisterModule<RegisterFluentModelAutofac>();
         }
     }
 

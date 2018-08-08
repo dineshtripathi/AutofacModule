@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Threading.Tasks;
     using System.Web.Configuration;
+    using Autofac.Demo.Fluent.V2;
     using Castle.Core.Internal;
     using Demo.Extensions;
     using Demo.Fluent;
@@ -32,6 +33,20 @@
         static async Task Main()
         {
 
+            //V2 with Macro interface ( Not a cleaner way , as the workflow is inconsitent but it works with less code and files
+            var BuildBusinessRule = new BuildBusinessRuleFluent()
+                .Create()
+                .RemoveSupressions()
+                .AddTitle()
+                .AverageOutScores()
+                .BoostMathsSkills()
+                .CombineAttributes()
+                .MoveBottomLevelAttributes()
+                .RemoveDuplicates()
+                .GetResults();
+            
+            //V1 Fluent with micro interfaces ( cleaner way and even can be managed and tested in a micro level granluar level
+            //as every chain provides and interface and takes model as a constructor parameter
             var fluent = new FluentOnetAttributes<AttributeModel>()
                 .Create<AttributeModel>()
                 .BuildAttributes()

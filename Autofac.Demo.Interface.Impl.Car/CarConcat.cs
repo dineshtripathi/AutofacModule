@@ -51,7 +51,8 @@ namespace Autofac.Demo.Interface.Impl.Car
 
         private async Task<string> Concat(string a)
         {
-            return a + ":" + a;
+
+            return await  Task.FromResult(a + ":" + a);
         }
         #endregion
     }

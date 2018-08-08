@@ -31,15 +31,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ValueTuple">
-      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,6 +57,150 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DemoModel.cs" />
+    <Compile Include="EDMXEF\ability.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\alternate_titles.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\career_changers_matrix.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\career_starters_matrix.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\content_model_reference.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\DFC_GDSAttributeRankOverRide.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\DFC_GDSCombinations.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\DFC_GDSContext.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\DFC_GDSTranlations.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\DFC_GlobalAttributeSuppression.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\DFC_SocMappings.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\dwa_reference.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\education_training_experience.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\emerging_tasks.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\ete_categories.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\green_dwa_reference.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\green_occupations.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\green_task_statements.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\interest.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\iwa_reference.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\JobprofileFramework.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobprofileFramework.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\JobprofileFramework.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\JobprofileFramework.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobprofileFramework.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\job_zones.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\job_zone_reference.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\knowledge.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\level_scale_anchors.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\occupation_data.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\occupation_level_metadata.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\sample_of_reported_titles.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\scales_reference.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\skill.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\survey_booklet_locations.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\sysdiagram.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\tasks_to_dwas.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\tasks_to_green_dwas.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\task_categories.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\task_ratings.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\task_statements.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\tools_and_technology.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\unspsc_reference.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\work_activities.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\work_context.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\work_context_categories.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\work_styles.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMXEF\work_values.cs">
+      <DependentUpon>JobprofileFramework.tt</DependentUpon>
+    </Compile>
     <Compile Include="ModelConsumer.cs" />
     <Compile Include="ModelAbstract.cs" />
     <Compile Include="ModelFeeder.cs" />
@@ -57,7 +208,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="EDMXEF\JobprofileFramework.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JobprofileFramework.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="EDMXEF\JobprofileFramework.edmx.diagram">
+      <DependentUpon>JobprofileFramework.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDMXEF\JobprofileFramework.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>JobprofileFramework.Context.cs</LastGenOutput>
+      <DependentUpon>JobprofileFramework.edmx</DependentUpon>
+    </Content>
+    <Content Include="EDMXEF\JobprofileFramework.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JobprofileFramework.edmx</DependentUpon>
+      <LastGenOutput>JobprofileFramework.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
