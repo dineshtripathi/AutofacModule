@@ -140,14 +140,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Autofac.Demo.Fluent.V2\Autofac.Demo.Fluent.V2.csproj">
-      <Project>{DB2235E1-D18B-4C2A-8953-4641ABB1BD84}</Project>
-      <Name>Autofac.Demo.Fluent.V2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Autofac.Demo.Fluent\Autofac.Demo.Fluent.csproj">
-      <Project>{24974B6C-0894-4307-A7E8-34C14AA1E7F4}</Project>
-      <Name>Autofac.Demo.Fluent</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Autofac.Demo.Common\Autofac.Demo.Common.csproj">
       <Project>{B238857C-5785-4E90-B292-84790374F214}</Project>
       <Name>Autofac.Demo.Common</Name>
