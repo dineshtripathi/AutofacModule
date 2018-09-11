@@ -1,4 +1,4 @@
-﻿namespace Autofac.Demo.Fluent.V2
+﻿namespace Autofac.Demo.Fluent.V2.Interface
 {
     public interface IProvideBusinessRule
     {

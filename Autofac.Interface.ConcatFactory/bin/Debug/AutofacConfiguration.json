@@ -1,0 +1,17 @@
+﻿{
+  "defaultAssembly": "BusConcat",
+  "modules": [
+    {
+      "type": "Autofac.Demo.Interface.Impl.Car.RegistrationModuleAutofac, Autofac.Demo.Interface.Impl.Car"
+    },
+    {
+      "type": "BusConcat.RegistrationModuleAutofac, BusConcat"
+    }
+    //{
+    //  "type": "DFC.Repositories.Impl.CosmosDB.RegistrationModuleAutofac, DFC.Repositories.Impl.CosmosDB"
+    //},
+    //{
+    //  "type": "DFC.RepositoryData.Impl.Cosmos.RegistrationModuleAutofac, DFC.RepositoryData.Impl.Cosmos"
+    //}
+  ]
+}

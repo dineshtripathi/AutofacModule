@@ -1,0 +1,45 @@
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.pdb
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\bin\Debug\System.ValueTuple.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\bin\Debug\System.ValueTuple.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csprojResolveAssemblyReference.cache
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csproj.CoreCompileInputs.cache
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csproj.CopyComplete
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.dll.config
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\System.ValueTuple.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\System.ValueTuple.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csprojAssemblyReference.cache
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csproj.CoreCompileInputs.cache
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csproj.CopyComplete
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.dll.config
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\Autofac.Demo.Model.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\System.ValueTuple.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\AutoMapper.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\bin\Debug\System.ValueTuple.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csprojAssemblyReference.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csproj.CoreCompileInputs.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.csproj.CopyComplete
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Model\obj\Debug\Autofac.Demo.Model.pdb

@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JobProfileFrameWorksModelStoreContainer" CdmEntityContainer="JobProfileFrameWorks">
+    <EntitySetMapping Name="content_model_reference">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.content_model_reference">
+        <MappingFragment StoreEntitySet="content_model_reference">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="element_name" ColumnName="element_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DFC_GDSAttributeRankOverRide">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.DFC_GDSAttributeRankOverRide">
+        <MappingFragment StoreEntitySet="DFC_GDSAttributeRankOverRide">
+          <ScalarProperty Name="onet_element_id" ColumnName="onet_element_id" />
+          <ScalarProperty Name="soccode" ColumnName="soccode" />
+          <ScalarProperty Name="datetimestamp" ColumnName="datetimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DFC_GDSCombinations">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.DFC_GDSCombinations">
+        <MappingFragment StoreEntitySet="DFC_GDSCombinations">
+          <ScalarProperty Name="onet_element_one_id" ColumnName="onet_element_one_id" />
+          <ScalarProperty Name="onet_element_two_id" ColumnName="onet_element_two_id" />
+          <ScalarProperty Name="combined_element_id" ColumnName="combined_element_id" />
+          <ScalarProperty Name="element_name" ColumnName="element_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="application_order" ColumnName="application_order" />
+          <ScalarProperty Name="datetimestamp" ColumnName="datetimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DFC_GDSContext">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.DFC_GDSContext">
+        <MappingFragment StoreEntitySet="DFC_GDSContext">
+          <ScalarProperty Name="onet_element_id" ColumnName="onet_element_id" />
+          <ScalarProperty Name="soccode" ColumnName="soccode" />
+          <ScalarProperty Name="context" ColumnName="context" />
+          <ScalarProperty Name="datetimestamp" ColumnName="datetimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DFC_GDSTranlations">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.DFC_GDSTranlations">
+        <MappingFragment StoreEntitySet="DFC_GDSTranlations">
+          <ScalarProperty Name="onet_element_id" ColumnName="onet_element_id" />
+          <ScalarProperty Name="translation" ColumnName="translation" />
+          <ScalarProperty Name="datetimestamp" ColumnName="datetimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DFC_GlobalAttributeSuppression">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.DFC_GlobalAttributeSuppression">
+        <MappingFragment StoreEntitySet="DFC_GlobalAttributeSuppression">
+          <ScalarProperty Name="onet_element_id" ColumnName="onet_element_id" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="datetimestamp" ColumnName="datetimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dwa_reference">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.dwa_reference">
+        <MappingFragment StoreEntitySet="dwa_reference">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="iwa_id" ColumnName="iwa_id" />
+          <ScalarProperty Name="dwa_id" ColumnName="dwa_id" />
+          <ScalarProperty Name="dwa_title" ColumnName="dwa_title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ete_categories">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.ete_categories">
+        <MappingFragment StoreEntitySet="ete_categories">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="category_description" ColumnName="category_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="green_dwa_reference">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.green_dwa_reference">
+        <MappingFragment StoreEntitySet="green_dwa_reference">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="green_dwa_id" ColumnName="green_dwa_id" />
+          <ScalarProperty Name="green_dwa_title" ColumnName="green_dwa_title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="iwa_reference">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.iwa_reference">
+        <MappingFragment StoreEntitySet="iwa_reference">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="iwa_id" ColumnName="iwa_id" />
+          <ScalarProperty Name="iwa_title" ColumnName="iwa_title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="job_zone_reference">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.job_zone_reference">
+        <MappingFragment StoreEntitySet="job_zone_reference">
+          <ScalarProperty Name="job_zone" ColumnName="job_zone" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="experience" ColumnName="experience" />
+          <ScalarProperty Name="education" ColumnName="education" />
+          <ScalarProperty Name="job_training" ColumnName="job_training" />
+          <ScalarProperty Name="examples" ColumnName="examples" />
+          <ScalarProperty Name="svp_range" ColumnName="svp_range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="occupation_data">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.occupation_data">
+        <MappingFragment StoreEntitySet="occupation_data">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="scales_reference">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.scales_reference">
+        <MappingFragment StoreEntitySet="scales_reference">
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="scale_name" ColumnName="scale_name" />
+          <ScalarProperty Name="minimum" ColumnName="minimum" />
+          <ScalarProperty Name="maximum" ColumnName="maximum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="task_categories">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.task_categories">
+        <MappingFragment StoreEntitySet="task_categories">
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="category_description" ColumnName="category_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="task_statements">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.task_statements">
+        <MappingFragment StoreEntitySet="task_statements">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="task" ColumnName="task" />
+          <ScalarProperty Name="task_type" ColumnName="task_type" />
+          <ScalarProperty Name="incumbents_responding" ColumnName="incumbents_responding" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unspsc_reference">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.unspsc_reference">
+        <MappingFragment StoreEntitySet="unspsc_reference">
+          <ScalarProperty Name="commodity_code" ColumnName="commodity_code" />
+          <ScalarProperty Name="commodity_title" ColumnName="commodity_title" />
+          <ScalarProperty Name="class_code" ColumnName="class_code" />
+          <ScalarProperty Name="class_title" ColumnName="class_title" />
+          <ScalarProperty Name="family_code" ColumnName="family_code" />
+          <ScalarProperty Name="family_title" ColumnName="family_title" />
+          <ScalarProperty Name="segment_code" ColumnName="segment_code" />
+          <ScalarProperty Name="segment_title" ColumnName="segment_title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="work_context_categories">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.work_context_categories">
+        <MappingFragment StoreEntitySet="work_context_categories">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="category_description" ColumnName="category_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="abilities">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.ability">
+        <MappingFragment StoreEntitySet="abilities">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="not_relevant" ColumnName="not_relevant" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="alternate_titles">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.alternate_titles">
+        <MappingFragment StoreEntitySet="alternate_titles">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="alternate_title" ColumnName="alternate_title" />
+          <ScalarProperty Name="short_title" ColumnName="short_title" />
+          <ScalarProperty Name="sources" ColumnName="sources" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="career_changers_matrix">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.career_changers_matrix">
+        <MappingFragment StoreEntitySet="career_changers_matrix">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="related_onetsoc_code" ColumnName="related_onetsoc_code" />
+          <ScalarProperty Name="related_index" ColumnName="related_index" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="career_starters_matrix">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.career_starters_matrix">
+        <MappingFragment StoreEntitySet="career_starters_matrix">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="related_onetsoc_code" ColumnName="related_onetsoc_code" />
+          <ScalarProperty Name="related_index" ColumnName="related_index" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DFC_SocMappings">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.DFC_SocMappings">
+        <MappingFragment StoreEntitySet="DFC_SocMappings">
+          <ScalarProperty Name="JobProfile" ColumnName="JobProfile" />
+          <ScalarProperty Name="SocCode" ColumnName="SocCode" />
+          <ScalarProperty Name="ONetCode" ColumnName="ONetCode" />
+          <ScalarProperty Name="QualityRating" ColumnName="QualityRating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="education_training_experience">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.education_training_experience">
+        <MappingFragment StoreEntitySet="education_training_experience">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="emerging_tasks">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.emerging_tasks">
+        <MappingFragment StoreEntitySet="emerging_tasks">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="task" ColumnName="task" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="original_task_id" ColumnName="original_task_id" />
+          <ScalarProperty Name="writein_total" ColumnName="writein_total" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="green_occupations">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.green_occupations">
+        <MappingFragment StoreEntitySet="green_occupations">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="green_occupational_category" ColumnName="green_occupational_category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="green_task_statements">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.green_task_statements">
+        <MappingFragment StoreEntitySet="green_task_statements">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="green_task_type" ColumnName="green_task_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="interests">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.interest">
+        <MappingFragment StoreEntitySet="interests">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="job_zones">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.job_zones">
+        <MappingFragment StoreEntitySet="job_zones">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="job_zone" ColumnName="job_zone" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="knowledges">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.knowledge">
+        <MappingFragment StoreEntitySet="knowledge">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="not_relevant" ColumnName="not_relevant" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="level_scale_anchors">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.level_scale_anchors">
+        <MappingFragment StoreEntitySet="level_scale_anchors">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="anchor_value" ColumnName="anchor_value" />
+          <ScalarProperty Name="anchor_description" ColumnName="anchor_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="occupation_level_metadata">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.occupation_level_metadata">
+        <MappingFragment StoreEntitySet="occupation_level_metadata">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="response" ColumnName="response" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="percent" ColumnName="percent" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sample_of_reported_titles">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.sample_of_reported_titles">
+        <MappingFragment StoreEntitySet="sample_of_reported_titles">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="reported_job_title" ColumnName="reported_job_title" />
+          <ScalarProperty Name="shown_in_my_next_move" ColumnName="shown_in_my_next_move" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="skills">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.skill">
+        <MappingFragment StoreEntitySet="skills">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="not_relevant" ColumnName="not_relevant" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="survey_booklet_locations">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.survey_booklet_locations">
+        <MappingFragment StoreEntitySet="survey_booklet_locations">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="survey_item_number" ColumnName="survey_item_number" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="task_ratings">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.task_ratings">
+        <MappingFragment StoreEntitySet="task_ratings">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasks_to_dwas">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.tasks_to_dwas">
+        <MappingFragment StoreEntitySet="tasks_to_dwas">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="dwa_id" ColumnName="dwa_id" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasks_to_green_dwas">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.tasks_to_green_dwas">
+        <MappingFragment StoreEntitySet="tasks_to_green_dwas">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="green_dwa_id" ColumnName="green_dwa_id" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_and_technology">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.tools_and_technology">
+        <MappingFragment StoreEntitySet="tools_and_technology">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="t2_type" ColumnName="t2_type" />
+          <ScalarProperty Name="t2_example" ColumnName="t2_example" />
+          <ScalarProperty Name="commodity_code" ColumnName="commodity_code" />
+          <ScalarProperty Name="hot_technology" ColumnName="hot_technology" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="work_activities">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.work_activities">
+        <MappingFragment StoreEntitySet="work_activities">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="not_relevant" ColumnName="not_relevant" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="work_context">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.work_context">
+        <MappingFragment StoreEntitySet="work_context">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="not_relevant" ColumnName="not_relevant" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="work_styles">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.work_styles">
+        <MappingFragment StoreEntitySet="work_styles">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="n" ColumnName="n" />
+          <ScalarProperty Name="standard_error" ColumnName="standard_error" />
+          <ScalarProperty Name="lower_ci_bound" ColumnName="lower_ci_bound" />
+          <ScalarProperty Name="upper_ci_bound" ColumnName="upper_ci_bound" />
+          <ScalarProperty Name="recommend_suppress" ColumnName="recommend_suppress" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="work_values">
+      <EntityTypeMapping TypeName="JobProfileFrameWorksModel.work_values">
+        <MappingFragment StoreEntitySet="work_values">
+          <ScalarProperty Name="onetsoc_code" ColumnName="onetsoc_code" />
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="scale_id" ColumnName="scale_id" />
+          <ScalarProperty Name="data_value" ColumnName="data_value" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+          <ScalarProperty Name="domain_source" ColumnName="domain_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

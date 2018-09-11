@@ -1,0 +1,2012 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JobProfileFrameWorksModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.abilities' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="abilities">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="not_relevant" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.alternate_titles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="alternate_titles">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="alternate_title" />
+      <PropertyRef Name="sources" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="alternate_title" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="short_title" Type="varchar" MaxLength="150" />
+    <Property Name="sources" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.career_changers_matrix' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="career_changers_matrix">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="related_onetsoc_code" />
+      <PropertyRef Name="related_index" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="related_onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="related_index" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.career_starters_matrix' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="career_starters_matrix">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="related_onetsoc_code" />
+      <PropertyRef Name="related_index" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="related_onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="related_index" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="content_model_reference">
+    <Key>
+      <PropertyRef Name="element_id" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="element_name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="1500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DFC_GDSAttributeRankOverRide">
+    <Key>
+      <PropertyRef Name="onet_element_id" />
+    </Key>
+    <Property Name="onet_element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="soccode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="datetimestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DFC_GDSCombinations">
+    <Key>
+      <PropertyRef Name="combined_element_id" />
+    </Key>
+    <Property Name="onet_element_one_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="onet_element_two_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="combined_element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="element_name" Type="varchar" MaxLength="150" />
+    <Property Name="description" Type="varchar" MaxLength="1500" />
+    <Property Name="application_order" Type="smallint" />
+    <Property Name="datetimestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DFC_GDSContext">
+    <Key>
+      <PropertyRef Name="onet_element_id" />
+    </Key>
+    <Property Name="onet_element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="soccode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="context" Type="varchar" MaxLength="1500" />
+    <Property Name="datetimestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DFC_GDSTranlations">
+    <Key>
+      <PropertyRef Name="onet_element_id" />
+    </Key>
+    <Property Name="onet_element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="translation" Type="varchar" MaxLength="1500" />
+    <Property Name="datetimestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DFC_GlobalAttributeSuppression">
+    <Key>
+      <PropertyRef Name="onet_element_id" />
+    </Key>
+    <Property Name="onet_element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="reason" Type="varchar" MaxLength="200" />
+    <Property Name="datetimestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.DFC_SocMappings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DFC_SocMappings">
+    <Key>
+      <PropertyRef Name="JobProfile" />
+      <PropertyRef Name="QualityRating" />
+    </Key>
+    <Property Name="JobProfile" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="SocCode" Type="varchar" MaxLength="10" />
+    <Property Name="ONetCode" Type="varchar" MaxLength="10" />
+    <Property Name="QualityRating" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dwa_reference">
+    <Key>
+      <PropertyRef Name="dwa_id" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="iwa_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="dwa_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="dwa_title" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.education_training_experience' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="education_training_experience">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="category" Type="decimal" Precision="3" Scale="0" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.emerging_tasks' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="emerging_tasks">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="task" />
+      <PropertyRef Name="category" />
+      <PropertyRef Name="writein_total" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="task" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="category" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="original_task_id" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="writein_total" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ete_categories">
+    <Key>
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="category" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="category" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="category_description" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="green_dwa_reference">
+    <Key>
+      <PropertyRef Name="green_dwa_id" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="green_dwa_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="green_dwa_title" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.green_occupations' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="green_occupations">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="green_occupational_category" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="green_occupational_category" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.green_task_statements' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="green_task_statements">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="task_id" />
+      <PropertyRef Name="green_task_type" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="task_id" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="green_task_type" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.interests' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="interests">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="iwa_reference">
+    <Key>
+      <PropertyRef Name="iwa_id" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="iwa_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="iwa_title" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="job_zone_reference">
+    <Key>
+      <PropertyRef Name="job_zone" />
+    </Key>
+    <Property Name="job_zone" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="experience" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="education" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="job_training" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="examples" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="svp_range" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.job_zones' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="job_zones">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="job_zone" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="job_zone" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.knowledge' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="knowledge">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="not_relevant" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.level_scale_anchors' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="level_scale_anchors">
+    <Key>
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="anchor_value" />
+      <PropertyRef Name="anchor_description" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="anchor_value" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="anchor_description" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="occupation_data">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.occupation_level_metadata' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="occupation_level_metadata">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="date_updated" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="item" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="response" Type="varchar" MaxLength="75" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="percent" Type="decimal" Precision="4" Scale="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.sample_of_reported_titles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="sample_of_reported_titles">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="reported_job_title" />
+      <PropertyRef Name="shown_in_my_next_move" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="reported_job_title" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="shown_in_my_next_move" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="scales_reference">
+    <Key>
+      <PropertyRef Name="scale_id" />
+    </Key>
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="scale_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="minimum" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="maximum" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.skills' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="skills">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="not_relevant" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.survey_booklet_locations' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="survey_booklet_locations">
+    <Key>
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="survey_item_number" />
+      <PropertyRef Name="scale_id" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="survey_item_number" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="task_categories">
+    <Key>
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="category" />
+    </Key>
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="category" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="category_description" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.task_ratings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="task_ratings">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="task_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="task_id" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="category" Type="decimal" Precision="3" Scale="0" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="task_statements">
+    <Key>
+      <PropertyRef Name="task_id" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="task_id" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="task" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="task_type" Type="varchar" MaxLength="12" />
+    <Property Name="incumbents_responding" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.tasks_to_dwas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tasks_to_dwas">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="task_id" />
+      <PropertyRef Name="dwa_id" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="task_id" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="dwa_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.tasks_to_green_dwas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tasks_to_green_dwas">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="task_id" />
+      <PropertyRef Name="green_dwa_id" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="task_id" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="green_dwa_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.tools_and_technology' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tools_and_technology">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="t2_type" />
+      <PropertyRef Name="t2_example" />
+      <PropertyRef Name="commodity_code" />
+      <PropertyRef Name="hot_technology" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="t2_type" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="t2_example" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="commodity_code" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="hot_technology" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="unspsc_reference">
+    <Key>
+      <PropertyRef Name="commodity_code" />
+    </Key>
+    <Property Name="commodity_code" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="commodity_title" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="class_code" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="class_title" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="family_code" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="family_title" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="segment_code" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="segment_title" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.work_activities' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="work_activities">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="not_relevant" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.work_context' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="work_context">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="category" Type="decimal" Precision="3" Scale="0" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="not_relevant" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="work_context_categories">
+    <Key>
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="category" />
+    </Key>
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="category" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="category_description" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.work_styles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="work_styles">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="n" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="standard_error" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="lower_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="upper_ci_bound" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="recommend_suppress" Type="char" MaxLength="1" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobProfileFrameWorks.dbo.work_values' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="work_values">
+    <Key>
+      <PropertyRef Name="onetsoc_code" />
+      <PropertyRef Name="element_id" />
+      <PropertyRef Name="scale_id" />
+      <PropertyRef Name="data_value" />
+      <PropertyRef Name="date_updated" />
+      <PropertyRef Name="domain_source" />
+    </Key>
+    <Property Name="onetsoc_code" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="element_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="scale_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="data_value" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="date_updated" Type="date" Nullable="false" />
+    <Property Name="domain_source" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__abilities__eleme__6D0D32F4">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="abilities" Type="Self.abilities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="abilities">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__abilities__onets__6C190EBB">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="abilities" Type="Self.abilities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="abilities">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__abilities__scale__6E01572D">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="abilities" Type="Self.abilities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="abilities">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__alternate__onets__6EF57B66">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="alternate_titles" Type="Self.alternate_titles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="alternate_titles">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__career_ch__onets__6FE99F9F">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="career_changers_matrix" Type="Self.career_changers_matrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="career_changers_matrix">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__career_ch__relat__70DDC3D8">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="career_changers_matrix" Type="Self.career_changers_matrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="career_changers_matrix">
+        <PropertyRef Name="related_onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__career_st__onets__71D1E811">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="career_starters_matrix" Type="Self.career_starters_matrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="career_starters_matrix">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__career_st__relat__72C60C4A">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="career_starters_matrix" Type="Self.career_starters_matrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="career_starters_matrix">
+        <PropertyRef Name="related_onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__dwa_refer__eleme__73BA3083">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="dwa_reference" Type="Self.dwa_reference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="dwa_reference">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__dwa_refer__iwa_i__74AE54BC">
+    <End Role="iwa_reference" Type="Self.iwa_reference" Multiplicity="1" />
+    <End Role="dwa_reference" Type="Self.dwa_reference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iwa_reference">
+        <PropertyRef Name="iwa_id" />
+      </Principal>
+      <Dependent Role="dwa_reference">
+        <PropertyRef Name="iwa_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__education__eleme__75A278F5">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="education_training_experience" Type="Self.education_training_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="education_training_experience">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__education__onets__787EE5A0">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="education_training_experience" Type="Self.education_training_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="education_training_experience">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__education__scale__76969D2E">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="education_training_experience" Type="Self.education_training_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="education_training_experience">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__education_traini__778AC167">
+    <End Role="ete_categories" Type="Self.ete_categories" Multiplicity="0..1" />
+    <End Role="education_training_experience" Type="Self.education_training_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ete_categories">
+        <PropertyRef Name="element_id" />
+        <PropertyRef Name="scale_id" />
+        <PropertyRef Name="category" />
+      </Principal>
+      <Dependent Role="education_training_experience">
+        <PropertyRef Name="element_id" />
+        <PropertyRef Name="scale_id" />
+        <PropertyRef Name="category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__emerging___onets__797309D9">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="emerging_tasks" Type="Self.emerging_tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="emerging_tasks">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__emerging___origi__7A672E12">
+    <End Role="task_statements" Type="Self.task_statements" Multiplicity="0..1" />
+    <End Role="emerging_tasks" Type="Self.emerging_tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task_statements">
+        <PropertyRef Name="task_id" />
+      </Principal>
+      <Dependent Role="emerging_tasks">
+        <PropertyRef Name="original_task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ete_categ__eleme__7B5B524B">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="ete_categories" Type="Self.ete_categories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="ete_categories">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ete_categ__scale__7C4F7684">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="ete_categories" Type="Self.ete_categories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="ete_categories">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__green_dwa__eleme__7D439ABD">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="green_dwa_reference" Type="Self.green_dwa_reference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="green_dwa_reference">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__green_occ__onets__7E37BEF6">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="green_occupations" Type="Self.green_occupations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="green_occupations">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__green_tas__onets__7F2BE32F">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="green_task_statements" Type="Self.green_task_statements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="green_task_statements">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__green_tas__task___00200768">
+    <End Role="task_statements" Type="Self.task_statements" Multiplicity="1" />
+    <End Role="green_task_statements" Type="Self.green_task_statements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task_statements">
+        <PropertyRef Name="task_id" />
+      </Principal>
+      <Dependent Role="green_task_statements">
+        <PropertyRef Name="task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__interests__eleme__02084FDA">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="interests" Type="Self.interests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="interests">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__interests__onets__01142BA1">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="interests" Type="Self.interests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="interests">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__interests__scale__02FC7413">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="interests" Type="Self.interests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="interests">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__iwa_refer__eleme__03F0984C">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="iwa_reference" Type="Self.iwa_reference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="iwa_reference">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__job_zones__job_z__05D8E0BE">
+    <End Role="job_zone_reference" Type="Self.job_zone_reference" Multiplicity="1" />
+    <End Role="job_zones" Type="Self.job_zones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="job_zone_reference">
+        <PropertyRef Name="job_zone" />
+      </Principal>
+      <Dependent Role="job_zones">
+        <PropertyRef Name="job_zone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__job_zones__onets__04E4BC85">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="job_zones" Type="Self.job_zones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="job_zones">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__knowledge__eleme__07C12930">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="knowledge" Type="Self.knowledge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="knowledge">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__knowledge__onets__06CD04F7">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="knowledge" Type="Self.knowledge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="knowledge">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__knowledge__scale__08B54D69">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="knowledge" Type="Self.knowledge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="knowledge">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__level_sca__eleme__09A971A2">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="level_scale_anchors" Type="Self.level_scale_anchors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="level_scale_anchors">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__level_sca__scale__0A9D95DB">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="level_scale_anchors" Type="Self.level_scale_anchors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="level_scale_anchors">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__occupatio__onets__0B91BA14">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="occupation_level_metadata" Type="Self.occupation_level_metadata" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="occupation_level_metadata">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sample_of__onets__0C85DE4D">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="sample_of_reported_titles" Type="Self.sample_of_reported_titles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="sample_of_reported_titles">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__skills__element___0E6E26BF">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="skills" Type="Self.skills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="skills">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__skills__onetsoc___0D7A0286">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="skills" Type="Self.skills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="skills">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__skills__scale_id__0F624AF8">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="skills" Type="Self.skills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="skills">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__survey_bo__eleme__10566F31">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="survey_booklet_locations" Type="Self.survey_booklet_locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="survey_booklet_locations">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__survey_bo__scale__114A936A">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="survey_booklet_locations" Type="Self.survey_booklet_locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="survey_booklet_locations">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__task_cate__scale__123EB7A3">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="task_categories" Type="Self.task_categories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="task_categories">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__task_rati__onets__1332DBDC">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="task_ratings" Type="Self.task_ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="task_ratings">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__task_rati__scale__151B244E">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="task_ratings" Type="Self.task_ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="task_ratings">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__task_rati__task___14270015">
+    <End Role="task_statements" Type="Self.task_statements" Multiplicity="1" />
+    <End Role="task_ratings" Type="Self.task_ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task_statements">
+        <PropertyRef Name="task_id" />
+      </Principal>
+      <Dependent Role="task_ratings">
+        <PropertyRef Name="task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__task_ratings__160F4887">
+    <End Role="task_categories" Type="Self.task_categories" Multiplicity="0..1" />
+    <End Role="task_ratings" Type="Self.task_ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task_categories">
+        <PropertyRef Name="scale_id" />
+        <PropertyRef Name="category" />
+      </Principal>
+      <Dependent Role="task_ratings">
+        <PropertyRef Name="scale_id" />
+        <PropertyRef Name="category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__task_stat__onets__17036CC0">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="task_statements" Type="Self.task_statements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="task_statements">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tasks_to___dwa_i__19DFD96B">
+    <End Role="dwa_reference" Type="Self.dwa_reference" Multiplicity="1" />
+    <End Role="tasks_to_dwas" Type="Self.tasks_to_dwas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dwa_reference">
+        <PropertyRef Name="dwa_id" />
+      </Principal>
+      <Dependent Role="tasks_to_dwas">
+        <PropertyRef Name="dwa_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tasks_to___green__1CBC4616">
+    <End Role="green_dwa_reference" Type="Self.green_dwa_reference" Multiplicity="1" />
+    <End Role="tasks_to_green_dwas" Type="Self.tasks_to_green_dwas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="green_dwa_reference">
+        <PropertyRef Name="green_dwa_id" />
+      </Principal>
+      <Dependent Role="tasks_to_green_dwas">
+        <PropertyRef Name="green_dwa_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tasks_to___onets__17F790F9">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="tasks_to_dwas" Type="Self.tasks_to_dwas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="tasks_to_dwas">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tasks_to___onets__1AD3FDA4">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="tasks_to_green_dwas" Type="Self.tasks_to_green_dwas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="tasks_to_green_dwas">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tasks_to___task___18EBB532">
+    <End Role="task_statements" Type="Self.task_statements" Multiplicity="1" />
+    <End Role="tasks_to_dwas" Type="Self.tasks_to_dwas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task_statements">
+        <PropertyRef Name="task_id" />
+      </Principal>
+      <Dependent Role="tasks_to_dwas">
+        <PropertyRef Name="task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tasks_to___task___1BC821DD">
+    <End Role="task_statements" Type="Self.task_statements" Multiplicity="1" />
+    <End Role="tasks_to_green_dwas" Type="Self.tasks_to_green_dwas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task_statements">
+        <PropertyRef Name="task_id" />
+      </Principal>
+      <Dependent Role="tasks_to_green_dwas">
+        <PropertyRef Name="task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tools_and__commo__1EA48E88">
+    <End Role="unspsc_reference" Type="Self.unspsc_reference" Multiplicity="1" />
+    <End Role="tools_and_technology" Type="Self.tools_and_technology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="unspsc_reference">
+        <PropertyRef Name="commodity_code" />
+      </Principal>
+      <Dependent Role="tools_and_technology">
+        <PropertyRef Name="commodity_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tools_and__onets__1DB06A4F">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="tools_and_technology" Type="Self.tools_and_technology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="tools_and_technology">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_acti__eleme__208CD6FA">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="work_activities" Type="Self.work_activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="work_activities">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_acti__onets__1F98B2C1">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="work_activities" Type="Self.work_activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="work_activities">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_acti__scale__2180FB33">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="work_activities" Type="Self.work_activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="work_activities">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_cont__eleme__236943A5">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="work_context" Type="Self.work_context" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="work_context">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_cont__eleme__2645B050">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="work_context_categories" Type="Self.work_context_categories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="work_context_categories">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_cont__onets__22751F6C">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="work_context" Type="Self.work_context" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="work_context">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_cont__scale__245D67DE">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="work_context" Type="Self.work_context" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="work_context">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_cont__scale__2739D489">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="work_context_categories" Type="Self.work_context_categories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="work_context_categories">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_context__25518C17">
+    <End Role="work_context_categories" Type="Self.work_context_categories" Multiplicity="0..1" />
+    <End Role="work_context" Type="Self.work_context" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="work_context_categories">
+        <PropertyRef Name="element_id" />
+        <PropertyRef Name="scale_id" />
+        <PropertyRef Name="category" />
+      </Principal>
+      <Dependent Role="work_context">
+        <PropertyRef Name="element_id" />
+        <PropertyRef Name="scale_id" />
+        <PropertyRef Name="category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_styl__eleme__29221CFB">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="work_styles" Type="Self.work_styles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="work_styles">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_styl__onets__282DF8C2">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="work_styles" Type="Self.work_styles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="work_styles">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_styl__scale__2A164134">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="work_styles" Type="Self.work_styles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="work_styles">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_valu__eleme__2BFE89A6">
+    <End Role="content_model_reference" Type="Self.content_model_reference" Multiplicity="1" />
+    <End Role="work_values" Type="Self.work_values" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="content_model_reference">
+        <PropertyRef Name="element_id" />
+      </Principal>
+      <Dependent Role="work_values">
+        <PropertyRef Name="element_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_valu__onets__2B0A656D">
+    <End Role="occupation_data" Type="Self.occupation_data" Multiplicity="1" />
+    <End Role="work_values" Type="Self.work_values" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="occupation_data">
+        <PropertyRef Name="onetsoc_code" />
+      </Principal>
+      <Dependent Role="work_values">
+        <PropertyRef Name="onetsoc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__work_valu__scale__2CF2ADDF">
+    <End Role="scales_reference" Type="Self.scales_reference" Multiplicity="1" />
+    <End Role="work_values" Type="Self.work_values" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="scales_reference">
+        <PropertyRef Name="scale_id" />
+      </Principal>
+      <Dependent Role="work_values">
+        <PropertyRef Name="scale_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="JobProfileFrameWorksModelStoreContainer">
+    <EntitySet Name="content_model_reference" EntityType="Self.content_model_reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DFC_GDSAttributeRankOverRide" EntityType="Self.DFC_GDSAttributeRankOverRide" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DFC_GDSCombinations" EntityType="Self.DFC_GDSCombinations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DFC_GDSContext" EntityType="Self.DFC_GDSContext" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DFC_GDSTranlations" EntityType="Self.DFC_GDSTranlations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DFC_GlobalAttributeSuppression" EntityType="Self.DFC_GlobalAttributeSuppression" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dwa_reference" EntityType="Self.dwa_reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ete_categories" EntityType="Self.ete_categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="green_dwa_reference" EntityType="Self.green_dwa_reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="iwa_reference" EntityType="Self.iwa_reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="job_zone_reference" EntityType="Self.job_zone_reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="occupation_data" EntityType="Self.occupation_data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="scales_reference" EntityType="Self.scales_reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="task_categories" EntityType="Self.task_categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="task_statements" EntityType="Self.task_statements" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="unspsc_reference" EntityType="Self.unspsc_reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="work_context_categories" EntityType="Self.work_context_categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="abilities" EntityType="Self.abilities" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [abilities].[onetsoc_code] AS [onetsoc_code], 
+    [abilities].[element_id] AS [element_id], 
+    [abilities].[scale_id] AS [scale_id], 
+    [abilities].[data_value] AS [data_value], 
+    [abilities].[n] AS [n], 
+    [abilities].[standard_error] AS [standard_error], 
+    [abilities].[lower_ci_bound] AS [lower_ci_bound], 
+    [abilities].[upper_ci_bound] AS [upper_ci_bound], 
+    [abilities].[recommend_suppress] AS [recommend_suppress], 
+    [abilities].[not_relevant] AS [not_relevant], 
+    [abilities].[date_updated] AS [date_updated], 
+    [abilities].[domain_source] AS [domain_source]
+    FROM [dbo].[abilities] AS [abilities]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="alternate_titles" EntityType="Self.alternate_titles" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [alternate_titles].[onetsoc_code] AS [onetsoc_code], 
+    [alternate_titles].[alternate_title] AS [alternate_title], 
+    [alternate_titles].[short_title] AS [short_title], 
+    [alternate_titles].[sources] AS [sources]
+    FROM [dbo].[alternate_titles] AS [alternate_titles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="career_changers_matrix" EntityType="Self.career_changers_matrix" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [career_changers_matrix].[onetsoc_code] AS [onetsoc_code], 
+    [career_changers_matrix].[related_onetsoc_code] AS [related_onetsoc_code], 
+    [career_changers_matrix].[related_index] AS [related_index]
+    FROM [dbo].[career_changers_matrix] AS [career_changers_matrix]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="career_starters_matrix" EntityType="Self.career_starters_matrix" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [career_starters_matrix].[onetsoc_code] AS [onetsoc_code], 
+    [career_starters_matrix].[related_onetsoc_code] AS [related_onetsoc_code], 
+    [career_starters_matrix].[related_index] AS [related_index]
+    FROM [dbo].[career_starters_matrix] AS [career_starters_matrix]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DFC_SocMappings" EntityType="Self.DFC_SocMappings" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DFC_SocMappings].[JobProfile] AS [JobProfile], 
+    [DFC_SocMappings].[SocCode] AS [SocCode], 
+    [DFC_SocMappings].[ONetCode] AS [ONetCode], 
+    [DFC_SocMappings].[QualityRating] AS [QualityRating]
+    FROM [dbo].[DFC_SocMappings] AS [DFC_SocMappings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="education_training_experience" EntityType="Self.education_training_experience" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [education_training_experience].[onetsoc_code] AS [onetsoc_code], 
+    [education_training_experience].[element_id] AS [element_id], 
+    [education_training_experience].[scale_id] AS [scale_id], 
+    [education_training_experience].[category] AS [category], 
+    [education_training_experience].[data_value] AS [data_value], 
+    [education_training_experience].[n] AS [n], 
+    [education_training_experience].[standard_error] AS [standard_error], 
+    [education_training_experience].[lower_ci_bound] AS [lower_ci_bound], 
+    [education_training_experience].[upper_ci_bound] AS [upper_ci_bound], 
+    [education_training_experience].[recommend_suppress] AS [recommend_suppress], 
+    [education_training_experience].[date_updated] AS [date_updated], 
+    [education_training_experience].[domain_source] AS [domain_source]
+    FROM [dbo].[education_training_experience] AS [education_training_experience]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="emerging_tasks" EntityType="Self.emerging_tasks" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [emerging_tasks].[onetsoc_code] AS [onetsoc_code], 
+    [emerging_tasks].[task] AS [task], 
+    [emerging_tasks].[category] AS [category], 
+    [emerging_tasks].[original_task_id] AS [original_task_id], 
+    [emerging_tasks].[writein_total] AS [writein_total], 
+    [emerging_tasks].[date_updated] AS [date_updated], 
+    [emerging_tasks].[domain_source] AS [domain_source]
+    FROM [dbo].[emerging_tasks] AS [emerging_tasks]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="green_occupations" EntityType="Self.green_occupations" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [green_occupations].[onetsoc_code] AS [onetsoc_code], 
+    [green_occupations].[green_occupational_category] AS [green_occupational_category]
+    FROM [dbo].[green_occupations] AS [green_occupations]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="green_task_statements" EntityType="Self.green_task_statements" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [green_task_statements].[onetsoc_code] AS [onetsoc_code], 
+    [green_task_statements].[task_id] AS [task_id], 
+    [green_task_statements].[green_task_type] AS [green_task_type]
+    FROM [dbo].[green_task_statements] AS [green_task_statements]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="interests" EntityType="Self.interests" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [interests].[onetsoc_code] AS [onetsoc_code], 
+    [interests].[element_id] AS [element_id], 
+    [interests].[scale_id] AS [scale_id], 
+    [interests].[data_value] AS [data_value], 
+    [interests].[date_updated] AS [date_updated], 
+    [interests].[domain_source] AS [domain_source]
+    FROM [dbo].[interests] AS [interests]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="job_zones" EntityType="Self.job_zones" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [job_zones].[onetsoc_code] AS [onetsoc_code], 
+    [job_zones].[job_zone] AS [job_zone], 
+    [job_zones].[date_updated] AS [date_updated], 
+    [job_zones].[domain_source] AS [domain_source]
+    FROM [dbo].[job_zones] AS [job_zones]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="knowledge" EntityType="Self.knowledge" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [knowledge].[onetsoc_code] AS [onetsoc_code], 
+    [knowledge].[element_id] AS [element_id], 
+    [knowledge].[scale_id] AS [scale_id], 
+    [knowledge].[data_value] AS [data_value], 
+    [knowledge].[n] AS [n], 
+    [knowledge].[standard_error] AS [standard_error], 
+    [knowledge].[lower_ci_bound] AS [lower_ci_bound], 
+    [knowledge].[upper_ci_bound] AS [upper_ci_bound], 
+    [knowledge].[recommend_suppress] AS [recommend_suppress], 
+    [knowledge].[not_relevant] AS [not_relevant], 
+    [knowledge].[date_updated] AS [date_updated], 
+    [knowledge].[domain_source] AS [domain_source]
+    FROM [dbo].[knowledge] AS [knowledge]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="level_scale_anchors" EntityType="Self.level_scale_anchors" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [level_scale_anchors].[element_id] AS [element_id], 
+    [level_scale_anchors].[scale_id] AS [scale_id], 
+    [level_scale_anchors].[anchor_value] AS [anchor_value], 
+    [level_scale_anchors].[anchor_description] AS [anchor_description]
+    FROM [dbo].[level_scale_anchors] AS [level_scale_anchors]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="occupation_level_metadata" EntityType="Self.occupation_level_metadata" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [occupation_level_metadata].[onetsoc_code] AS [onetsoc_code], 
+    [occupation_level_metadata].[item] AS [item], 
+    [occupation_level_metadata].[response] AS [response], 
+    [occupation_level_metadata].[n] AS [n], 
+    [occupation_level_metadata].[percent] AS [percent], 
+    [occupation_level_metadata].[date_updated] AS [date_updated]
+    FROM [dbo].[occupation_level_metadata] AS [occupation_level_metadata]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sample_of_reported_titles" EntityType="Self.sample_of_reported_titles" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [sample_of_reported_titles].[onetsoc_code] AS [onetsoc_code], 
+    [sample_of_reported_titles].[reported_job_title] AS [reported_job_title], 
+    [sample_of_reported_titles].[shown_in_my_next_move] AS [shown_in_my_next_move]
+    FROM [dbo].[sample_of_reported_titles] AS [sample_of_reported_titles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="skills" EntityType="Self.skills" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [skills].[onetsoc_code] AS [onetsoc_code], 
+    [skills].[element_id] AS [element_id], 
+    [skills].[scale_id] AS [scale_id], 
+    [skills].[data_value] AS [data_value], 
+    [skills].[n] AS [n], 
+    [skills].[standard_error] AS [standard_error], 
+    [skills].[lower_ci_bound] AS [lower_ci_bound], 
+    [skills].[upper_ci_bound] AS [upper_ci_bound], 
+    [skills].[recommend_suppress] AS [recommend_suppress], 
+    [skills].[not_relevant] AS [not_relevant], 
+    [skills].[date_updated] AS [date_updated], 
+    [skills].[domain_source] AS [domain_source]
+    FROM [dbo].[skills] AS [skills]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="survey_booklet_locations" EntityType="Self.survey_booklet_locations" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [survey_booklet_locations].[element_id] AS [element_id], 
+    [survey_booklet_locations].[survey_item_number] AS [survey_item_number], 
+    [survey_booklet_locations].[scale_id] AS [scale_id]
+    FROM [dbo].[survey_booklet_locations] AS [survey_booklet_locations]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="task_ratings" EntityType="Self.task_ratings" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [task_ratings].[onetsoc_code] AS [onetsoc_code], 
+    [task_ratings].[task_id] AS [task_id], 
+    [task_ratings].[scale_id] AS [scale_id], 
+    [task_ratings].[category] AS [category], 
+    [task_ratings].[data_value] AS [data_value], 
+    [task_ratings].[n] AS [n], 
+    [task_ratings].[standard_error] AS [standard_error], 
+    [task_ratings].[lower_ci_bound] AS [lower_ci_bound], 
+    [task_ratings].[upper_ci_bound] AS [upper_ci_bound], 
+    [task_ratings].[recommend_suppress] AS [recommend_suppress], 
+    [task_ratings].[date_updated] AS [date_updated], 
+    [task_ratings].[domain_source] AS [domain_source]
+    FROM [dbo].[task_ratings] AS [task_ratings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tasks_to_dwas" EntityType="Self.tasks_to_dwas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tasks_to_dwas].[onetsoc_code] AS [onetsoc_code], 
+    [tasks_to_dwas].[task_id] AS [task_id], 
+    [tasks_to_dwas].[dwa_id] AS [dwa_id], 
+    [tasks_to_dwas].[date_updated] AS [date_updated], 
+    [tasks_to_dwas].[domain_source] AS [domain_source]
+    FROM [dbo].[tasks_to_dwas] AS [tasks_to_dwas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tasks_to_green_dwas" EntityType="Self.tasks_to_green_dwas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tasks_to_green_dwas].[onetsoc_code] AS [onetsoc_code], 
+    [tasks_to_green_dwas].[task_id] AS [task_id], 
+    [tasks_to_green_dwas].[green_dwa_id] AS [green_dwa_id], 
+    [tasks_to_green_dwas].[date_updated] AS [date_updated], 
+    [tasks_to_green_dwas].[domain_source] AS [domain_source]
+    FROM [dbo].[tasks_to_green_dwas] AS [tasks_to_green_dwas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tools_and_technology" EntityType="Self.tools_and_technology" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tools_and_technology].[onetsoc_code] AS [onetsoc_code], 
+    [tools_and_technology].[t2_type] AS [t2_type], 
+    [tools_and_technology].[t2_example] AS [t2_example], 
+    [tools_and_technology].[commodity_code] AS [commodity_code], 
+    [tools_and_technology].[hot_technology] AS [hot_technology]
+    FROM [dbo].[tools_and_technology] AS [tools_and_technology]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="work_activities" EntityType="Self.work_activities" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [work_activities].[onetsoc_code] AS [onetsoc_code], 
+    [work_activities].[element_id] AS [element_id], 
+    [work_activities].[scale_id] AS [scale_id], 
+    [work_activities].[data_value] AS [data_value], 
+    [work_activities].[n] AS [n], 
+    [work_activities].[standard_error] AS [standard_error], 
+    [work_activities].[lower_ci_bound] AS [lower_ci_bound], 
+    [work_activities].[upper_ci_bound] AS [upper_ci_bound], 
+    [work_activities].[recommend_suppress] AS [recommend_suppress], 
+    [work_activities].[not_relevant] AS [not_relevant], 
+    [work_activities].[date_updated] AS [date_updated], 
+    [work_activities].[domain_source] AS [domain_source]
+    FROM [dbo].[work_activities] AS [work_activities]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="work_context" EntityType="Self.work_context" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [work_context].[onetsoc_code] AS [onetsoc_code], 
+    [work_context].[element_id] AS [element_id], 
+    [work_context].[scale_id] AS [scale_id], 
+    [work_context].[category] AS [category], 
+    [work_context].[data_value] AS [data_value], 
+    [work_context].[n] AS [n], 
+    [work_context].[standard_error] AS [standard_error], 
+    [work_context].[lower_ci_bound] AS [lower_ci_bound], 
+    [work_context].[upper_ci_bound] AS [upper_ci_bound], 
+    [work_context].[recommend_suppress] AS [recommend_suppress], 
+    [work_context].[not_relevant] AS [not_relevant], 
+    [work_context].[date_updated] AS [date_updated], 
+    [work_context].[domain_source] AS [domain_source]
+    FROM [dbo].[work_context] AS [work_context]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="work_styles" EntityType="Self.work_styles" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [work_styles].[onetsoc_code] AS [onetsoc_code], 
+    [work_styles].[element_id] AS [element_id], 
+    [work_styles].[scale_id] AS [scale_id], 
+    [work_styles].[data_value] AS [data_value], 
+    [work_styles].[n] AS [n], 
+    [work_styles].[standard_error] AS [standard_error], 
+    [work_styles].[lower_ci_bound] AS [lower_ci_bound], 
+    [work_styles].[upper_ci_bound] AS [upper_ci_bound], 
+    [work_styles].[recommend_suppress] AS [recommend_suppress], 
+    [work_styles].[date_updated] AS [date_updated], 
+    [work_styles].[domain_source] AS [domain_source]
+    FROM [dbo].[work_styles] AS [work_styles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="work_values" EntityType="Self.work_values" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [work_values].[onetsoc_code] AS [onetsoc_code], 
+    [work_values].[element_id] AS [element_id], 
+    [work_values].[scale_id] AS [scale_id], 
+    [work_values].[data_value] AS [data_value], 
+    [work_values].[date_updated] AS [date_updated], 
+    [work_values].[domain_source] AS [domain_source]
+    FROM [dbo].[work_values] AS [work_values]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__abilities__eleme__6D0D32F4" Association="Self.FK__abilities__eleme__6D0D32F4">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="abilities" EntitySet="abilities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__abilities__onets__6C190EBB" Association="Self.FK__abilities__onets__6C190EBB">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="abilities" EntitySet="abilities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__abilities__scale__6E01572D" Association="Self.FK__abilities__scale__6E01572D">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="abilities" EntitySet="abilities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__alternate__onets__6EF57B66" Association="Self.FK__alternate__onets__6EF57B66">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="alternate_titles" EntitySet="alternate_titles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__career_ch__onets__6FE99F9F" Association="Self.FK__career_ch__onets__6FE99F9F">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="career_changers_matrix" EntitySet="career_changers_matrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK__career_ch__relat__70DDC3D8" Association="Self.FK__career_ch__relat__70DDC3D8">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="career_changers_matrix" EntitySet="career_changers_matrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK__career_st__onets__71D1E811" Association="Self.FK__career_st__onets__71D1E811">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="career_starters_matrix" EntitySet="career_starters_matrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK__career_st__relat__72C60C4A" Association="Self.FK__career_st__relat__72C60C4A">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="career_starters_matrix" EntitySet="career_starters_matrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK__dwa_refer__eleme__73BA3083" Association="Self.FK__dwa_refer__eleme__73BA3083">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="dwa_reference" EntitySet="dwa_reference" />
+    </AssociationSet>
+    <AssociationSet Name="FK__dwa_refer__iwa_i__74AE54BC" Association="Self.FK__dwa_refer__iwa_i__74AE54BC">
+      <End Role="iwa_reference" EntitySet="iwa_reference" />
+      <End Role="dwa_reference" EntitySet="dwa_reference" />
+    </AssociationSet>
+    <AssociationSet Name="FK__education__eleme__75A278F5" Association="Self.FK__education__eleme__75A278F5">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="education_training_experience" EntitySet="education_training_experience" />
+    </AssociationSet>
+    <AssociationSet Name="FK__education__onets__787EE5A0" Association="Self.FK__education__onets__787EE5A0">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="education_training_experience" EntitySet="education_training_experience" />
+    </AssociationSet>
+    <AssociationSet Name="FK__education__scale__76969D2E" Association="Self.FK__education__scale__76969D2E">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="education_training_experience" EntitySet="education_training_experience" />
+    </AssociationSet>
+    <AssociationSet Name="FK__education_traini__778AC167" Association="Self.FK__education_traini__778AC167">
+      <End Role="ete_categories" EntitySet="ete_categories" />
+      <End Role="education_training_experience" EntitySet="education_training_experience" />
+    </AssociationSet>
+    <AssociationSet Name="FK__emerging___onets__797309D9" Association="Self.FK__emerging___onets__797309D9">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="emerging_tasks" EntitySet="emerging_tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__emerging___origi__7A672E12" Association="Self.FK__emerging___origi__7A672E12">
+      <End Role="task_statements" EntitySet="task_statements" />
+      <End Role="emerging_tasks" EntitySet="emerging_tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ete_categ__eleme__7B5B524B" Association="Self.FK__ete_categ__eleme__7B5B524B">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="ete_categories" EntitySet="ete_categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ete_categ__scale__7C4F7684" Association="Self.FK__ete_categ__scale__7C4F7684">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="ete_categories" EntitySet="ete_categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__green_dwa__eleme__7D439ABD" Association="Self.FK__green_dwa__eleme__7D439ABD">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="green_dwa_reference" EntitySet="green_dwa_reference" />
+    </AssociationSet>
+    <AssociationSet Name="FK__green_occ__onets__7E37BEF6" Association="Self.FK__green_occ__onets__7E37BEF6">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="green_occupations" EntitySet="green_occupations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__green_tas__onets__7F2BE32F" Association="Self.FK__green_tas__onets__7F2BE32F">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="green_task_statements" EntitySet="green_task_statements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__green_tas__task___00200768" Association="Self.FK__green_tas__task___00200768">
+      <End Role="task_statements" EntitySet="task_statements" />
+      <End Role="green_task_statements" EntitySet="green_task_statements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__interests__eleme__02084FDA" Association="Self.FK__interests__eleme__02084FDA">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="interests" EntitySet="interests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__interests__onets__01142BA1" Association="Self.FK__interests__onets__01142BA1">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="interests" EntitySet="interests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__interests__scale__02FC7413" Association="Self.FK__interests__scale__02FC7413">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="interests" EntitySet="interests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__iwa_refer__eleme__03F0984C" Association="Self.FK__iwa_refer__eleme__03F0984C">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="iwa_reference" EntitySet="iwa_reference" />
+    </AssociationSet>
+    <AssociationSet Name="FK__job_zones__job_z__05D8E0BE" Association="Self.FK__job_zones__job_z__05D8E0BE">
+      <End Role="job_zone_reference" EntitySet="job_zone_reference" />
+      <End Role="job_zones" EntitySet="job_zones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__job_zones__onets__04E4BC85" Association="Self.FK__job_zones__onets__04E4BC85">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="job_zones" EntitySet="job_zones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__knowledge__eleme__07C12930" Association="Self.FK__knowledge__eleme__07C12930">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="knowledge" EntitySet="knowledge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__knowledge__onets__06CD04F7" Association="Self.FK__knowledge__onets__06CD04F7">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="knowledge" EntitySet="knowledge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__knowledge__scale__08B54D69" Association="Self.FK__knowledge__scale__08B54D69">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="knowledge" EntitySet="knowledge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__level_sca__eleme__09A971A2" Association="Self.FK__level_sca__eleme__09A971A2">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="level_scale_anchors" EntitySet="level_scale_anchors" />
+    </AssociationSet>
+    <AssociationSet Name="FK__level_sca__scale__0A9D95DB" Association="Self.FK__level_sca__scale__0A9D95DB">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="level_scale_anchors" EntitySet="level_scale_anchors" />
+    </AssociationSet>
+    <AssociationSet Name="FK__occupatio__onets__0B91BA14" Association="Self.FK__occupatio__onets__0B91BA14">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="occupation_level_metadata" EntitySet="occupation_level_metadata" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sample_of__onets__0C85DE4D" Association="Self.FK__sample_of__onets__0C85DE4D">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="sample_of_reported_titles" EntitySet="sample_of_reported_titles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__skills__element___0E6E26BF" Association="Self.FK__skills__element___0E6E26BF">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="skills" EntitySet="skills" />
+    </AssociationSet>
+    <AssociationSet Name="FK__skills__onetsoc___0D7A0286" Association="Self.FK__skills__onetsoc___0D7A0286">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="skills" EntitySet="skills" />
+    </AssociationSet>
+    <AssociationSet Name="FK__skills__scale_id__0F624AF8" Association="Self.FK__skills__scale_id__0F624AF8">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="skills" EntitySet="skills" />
+    </AssociationSet>
+    <AssociationSet Name="FK__survey_bo__eleme__10566F31" Association="Self.FK__survey_bo__eleme__10566F31">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="survey_booklet_locations" EntitySet="survey_booklet_locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__survey_bo__scale__114A936A" Association="Self.FK__survey_bo__scale__114A936A">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="survey_booklet_locations" EntitySet="survey_booklet_locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__task_cate__scale__123EB7A3" Association="Self.FK__task_cate__scale__123EB7A3">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="task_categories" EntitySet="task_categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__task_rati__onets__1332DBDC" Association="Self.FK__task_rati__onets__1332DBDC">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="task_ratings" EntitySet="task_ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__task_rati__scale__151B244E" Association="Self.FK__task_rati__scale__151B244E">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="task_ratings" EntitySet="task_ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__task_rati__task___14270015" Association="Self.FK__task_rati__task___14270015">
+      <End Role="task_statements" EntitySet="task_statements" />
+      <End Role="task_ratings" EntitySet="task_ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__task_ratings__160F4887" Association="Self.FK__task_ratings__160F4887">
+      <End Role="task_categories" EntitySet="task_categories" />
+      <End Role="task_ratings" EntitySet="task_ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__task_stat__onets__17036CC0" Association="Self.FK__task_stat__onets__17036CC0">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="task_statements" EntitySet="task_statements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tasks_to___dwa_i__19DFD96B" Association="Self.FK__tasks_to___dwa_i__19DFD96B">
+      <End Role="dwa_reference" EntitySet="dwa_reference" />
+      <End Role="tasks_to_dwas" EntitySet="tasks_to_dwas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tasks_to___green__1CBC4616" Association="Self.FK__tasks_to___green__1CBC4616">
+      <End Role="green_dwa_reference" EntitySet="green_dwa_reference" />
+      <End Role="tasks_to_green_dwas" EntitySet="tasks_to_green_dwas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tasks_to___onets__17F790F9" Association="Self.FK__tasks_to___onets__17F790F9">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="tasks_to_dwas" EntitySet="tasks_to_dwas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tasks_to___onets__1AD3FDA4" Association="Self.FK__tasks_to___onets__1AD3FDA4">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="tasks_to_green_dwas" EntitySet="tasks_to_green_dwas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tasks_to___task___18EBB532" Association="Self.FK__tasks_to___task___18EBB532">
+      <End Role="task_statements" EntitySet="task_statements" />
+      <End Role="tasks_to_dwas" EntitySet="tasks_to_dwas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tasks_to___task___1BC821DD" Association="Self.FK__tasks_to___task___1BC821DD">
+      <End Role="task_statements" EntitySet="task_statements" />
+      <End Role="tasks_to_green_dwas" EntitySet="tasks_to_green_dwas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tools_and__commo__1EA48E88" Association="Self.FK__tools_and__commo__1EA48E88">
+      <End Role="unspsc_reference" EntitySet="unspsc_reference" />
+      <End Role="tools_and_technology" EntitySet="tools_and_technology" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tools_and__onets__1DB06A4F" Association="Self.FK__tools_and__onets__1DB06A4F">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="tools_and_technology" EntitySet="tools_and_technology" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_acti__eleme__208CD6FA" Association="Self.FK__work_acti__eleme__208CD6FA">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="work_activities" EntitySet="work_activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_acti__onets__1F98B2C1" Association="Self.FK__work_acti__onets__1F98B2C1">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="work_activities" EntitySet="work_activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_acti__scale__2180FB33" Association="Self.FK__work_acti__scale__2180FB33">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="work_activities" EntitySet="work_activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_cont__eleme__236943A5" Association="Self.FK__work_cont__eleme__236943A5">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="work_context" EntitySet="work_context" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_cont__eleme__2645B050" Association="Self.FK__work_cont__eleme__2645B050">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="work_context_categories" EntitySet="work_context_categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_cont__onets__22751F6C" Association="Self.FK__work_cont__onets__22751F6C">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="work_context" EntitySet="work_context" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_cont__scale__245D67DE" Association="Self.FK__work_cont__scale__245D67DE">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="work_context" EntitySet="work_context" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_cont__scale__2739D489" Association="Self.FK__work_cont__scale__2739D489">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="work_context_categories" EntitySet="work_context_categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_context__25518C17" Association="Self.FK__work_context__25518C17">
+      <End Role="work_context_categories" EntitySet="work_context_categories" />
+      <End Role="work_context" EntitySet="work_context" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_styl__eleme__29221CFB" Association="Self.FK__work_styl__eleme__29221CFB">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="work_styles" EntitySet="work_styles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_styl__onets__282DF8C2" Association="Self.FK__work_styl__onets__282DF8C2">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="work_styles" EntitySet="work_styles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_styl__scale__2A164134" Association="Self.FK__work_styl__scale__2A164134">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="work_styles" EntitySet="work_styles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_valu__eleme__2BFE89A6" Association="Self.FK__work_valu__eleme__2BFE89A6">
+      <End Role="content_model_reference" EntitySet="content_model_reference" />
+      <End Role="work_values" EntitySet="work_values" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_valu__onets__2B0A656D" Association="Self.FK__work_valu__onets__2B0A656D">
+      <End Role="occupation_data" EntitySet="occupation_data" />
+      <End Role="work_values" EntitySet="work_values" />
+    </AssociationSet>
+    <AssociationSet Name="FK__work_valu__scale__2CF2ADDF" Association="Self.FK__work_valu__scale__2CF2ADDF">
+      <End Role="scales_reference" EntitySet="scales_reference" />
+      <End Role="work_values" EntitySet="work_values" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

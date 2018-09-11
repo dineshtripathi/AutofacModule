@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  autofac.demo.concatwebapp:
-    image: ${DOCKER_REGISTRY}autofacdemoconcatwebapp
+  autofac.interface.concatfactory:
+    image: ${DOCKER_REGISTRY}autofacinterfaceconcatfactory
     build:
-      context: .\Autofac.Demo.ConcatWebApp
+      context: .\Autofac.Interface.ConcatFactory
       dockerfile: Dockerfile

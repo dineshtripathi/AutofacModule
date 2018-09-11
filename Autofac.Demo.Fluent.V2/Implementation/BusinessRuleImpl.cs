@@ -1,5 +1,7 @@
-﻿namespace Autofac.Demo.Fluent.V2
+﻿namespace Autofac.Demo.Fluent.V2.Implementation
 {
+    using Interface;
+
     public class BusinessRuleImpl : IProvideBusinessRule
     {
         #region Implementation of IBuildBusinessRuleFluent

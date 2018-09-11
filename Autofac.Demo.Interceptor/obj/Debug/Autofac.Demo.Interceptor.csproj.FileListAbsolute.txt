@@ -1,0 +1,108 @@
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.dll.config
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.pdb
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Castle.Core.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.IO.Compression.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Net.Http.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Castle.Core.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csprojResolveAssemblyReference.cache
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csproj.CoreCompileInputs.cache
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csproj.CopyComplete
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.dll.config
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Castle.Core.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Buffers.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Memory.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Numerics.Vectors.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Castle.Core.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Buffers.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Memory.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Numerics.Vectors.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csprojAssemblyReference.cache
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csproj.CoreCompileInputs.cache
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csproj.CopyComplete
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.dll.config
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Demo.Interceptor.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Castle.Core.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Buffers.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Memory.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Numerics.Vectors.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Configuration.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extensions.DependencyInjection.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Autofac.Extras.DynamicProxy.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Castle.Core.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Buffers.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Memory.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Numerics.Vectors.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csprojAssemblyReference.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csproj.CoreCompileInputs.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.csproj.CopyComplete
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Interceptor\obj\Debug\Autofac.Demo.Interceptor.pdb

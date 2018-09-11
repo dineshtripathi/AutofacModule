@@ -1,0 +1,11 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  autofac.interface.concatfactory:
+    build:
+      context: D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Interface.ConcatFactory
+      dockerfile: Dockerfile
+    image: autofacinterfaceconcatfactory
+version: '3.4'

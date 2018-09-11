@@ -1,0 +1,6 @@
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.SpeechVoice\bin\Debug\Autofac.Demo.SpeechVoice.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.SpeechVoice\bin\Debug\Autofac.Demo.SpeechVoice.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.SpeechVoice\obj\Debug\Autofac.Demo.SpeechVoice.csprojAssemblyReference.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.SpeechVoice\obj\Debug\Autofac.Demo.SpeechVoice.csproj.CoreCompileInputs.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.SpeechVoice\obj\Debug\Autofac.Demo.SpeechVoice.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.SpeechVoice\obj\Debug\Autofac.Demo.SpeechVoice.pdb

@@ -1,0 +1,69 @@
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.pdb
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.ValueTuple.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.ValueTuple.xml
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csprojResolveAssemblyReference.cache
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csproj.CoreCompileInputs.cache
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csproj.CopyComplete
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.dll
+D:\working dfc-digital\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.dll.config
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\JWT.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Newtonsoft.Json.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.ValueTuple.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\JWT.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Newtonsoft.Json.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.ValueTuple.xml
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csprojAssemblyReference.cache
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csproj.CoreCompileInputs.cache
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csproj.CopyComplete
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.dll
+D:\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.dll.config
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Autofac.Demo.Extensions.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\JWT.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Newtonsoft.Json.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.ValueTuple.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\AutoMapper.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\JWT.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\Newtonsoft.Json.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\bin\Debug\System.ValueTuple.xml
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csprojAssemblyReference.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csproj.CoreCompileInputs.cache
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.csproj.CopyComplete
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.dll
+D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Demo.Extensions\obj\Debug\Autofac.Demo.Extensions.pdb

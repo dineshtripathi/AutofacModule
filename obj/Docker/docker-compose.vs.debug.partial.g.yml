@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  autofac.interface.concatfactory:
+    image: autofacinterfaceconcatfactory:dev
+    build:
+      target: base
+    volumes:
+      - D:\DineshVisualStudio\Autofac-Interceptor\AutofacModule\Autofac.Interface.ConcatFactory:C:\app
+      - :C:\remote_debugger:ro
+    entrypoint: cmd /c "set DISABLE_PERFORMANCE_DEBUGGER=1 & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "C:\\app\\bin\\Debug\\Autofac.Interface.ConcatFactory.exe"
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
